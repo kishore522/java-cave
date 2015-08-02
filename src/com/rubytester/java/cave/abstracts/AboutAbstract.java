@@ -15,17 +15,17 @@ abstract class Machine {
         this.id = id;
     }
 
-    // abstract class can have abstract methods
-    // this forces every subclass to implemented start method
+    // abstract method declared
+    // this forces every subclass to implemented it
     // But this class does not provide default implementation
     abstract void start();
 
 
-    // default implementation that happens to call abstract method in the body
+    // abstract class can provide default implementation just like a regular class
     void run() {
         /// do some stuff and
         System.out.println("Run method in Machine abstract class");
-        // call abstract method
+        // call abstract method that for sure has implementation in a concrete class
         start();
     }
 

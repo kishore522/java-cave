@@ -1,11 +1,19 @@
 // http://courses.caveofprogramming.com/courses/java-for-complete-beginners/lectures/38470
 package com.rubytester.java.cave.interfaces;
 
-// behavior. in ruby this would be InfoAskable, HasInfo etc..
+// behavior. in ruby this would be Infoable, InfoAskable, HasInfo etc..
 interface Info {
 
-    // force clases that implement this interfact to provide this method's implementation
+    // force classes that implement this interface to provide this method's implementation
+    // similar to abstract method
     void info();
+/**
+    //this is not permitted. Interface must not have implementation
+    void info(){
+        // implementation
+    }
+*/
+
 }
 
 class Person implements Info {

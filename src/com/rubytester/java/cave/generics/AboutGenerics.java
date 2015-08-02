@@ -53,7 +53,7 @@ class AboutGenerics {
     }
 
 
-    // any subclass of Machine but we operate on a known Machine. Isn't this a bit silly or redundant?
+    // any subclass of Machine but we operate on unknown Object signaled by wildcard ?
     public static void showUnknown(ArrayList<?> ms) {
 
         for (Object m : ms) { // ? stands for Unknown so we can only use Object type
